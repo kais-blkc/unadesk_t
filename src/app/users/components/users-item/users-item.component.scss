@@ -7,6 +7,10 @@
   background-color: #ffffff20;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
+
   &:hover {
     .user-item__delete {
       opacity: 1;
