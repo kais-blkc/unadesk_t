@@ -1,0 +1,26 @@
+<div class="user-item">
+  <button class="user-item__delete btn btn--reset btn--opacity" (click)="onDeleteUser(user.id)">
+    <img src="/assets/img/delete.svg" alt="" />
+  </button>
+
+  <div class="user-item__id">
+    <b>ID: </b>
+    <span>
+      {{ user.id }}
+    </span>
+  </div>
+
+  <div class="user-item__name">
+    <b>Имя: </b>
+    <span>
+      {{ user.user_name }}
+    </span>
+  </div>
+
+  <div class="user-item__status">
+    <b>Статус: </b>
+    <span>
+      {{ user.is_active }}
+    </span>
+  </div>
+</div>

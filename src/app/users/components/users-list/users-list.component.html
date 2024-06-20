@@ -1,0 +1,11 @@
+<div class="users-list__wrapper">
+  <app-users-params (onViewMode)="changeViewMode($event)" [viewMode]="viewMode"></app-users-params>
+
+  <div class="users-list {{ viewMode }}">
+    @for (user of users$ | async; track $index) {
+      <app-users-item [user]="user"></app-users-item>
+    }
+  </div>
+
+  <app-users-pagination></app-users-pagination>
+</div>

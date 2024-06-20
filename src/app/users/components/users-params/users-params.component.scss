@@ -1,0 +1,30 @@
+.users-list__params {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.users-list__search {
+  form {
+    position: relative;
+    display: flex;
+    gap: 10px;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 16px;
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 0 2px #ccc;
+    }
+  }
+}
+.select-view-mode {
+  button.active {
+    opacity: 0.5;
+  }
+}

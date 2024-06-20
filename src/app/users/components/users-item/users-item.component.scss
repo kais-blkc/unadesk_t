@@ -1,0 +1,26 @@
+.user-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #ffffff20;
+  position: relative;
+
+  &:hover {
+    .user-item__delete {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__delete {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: all 0.3s ease;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,33 @@
+<div class="users-pagination">
+  <div class="users-pagination__btns">
+    <app-btn-accent (click)="onPageChange(currentPage - 1)" [isDisabled]="currentPage === 1">
+      Назад
+    </app-btn-accent>
+
+    <span>{{ currentPage }}</span>
+
+    <app-btn-accent
+      (click)="onPageChange(currentPage + 1)"
+      [isDisabled]="currentPage * itemsPerPage >= totalUsers"
+    >
+      Вперед
+    </app-btn-accent>
+  </div>
+
+  <div class="users-pagination__per-page items-per-page">
+    <div class="items-per-page__title">Элементов на странице:</div>
+    <div class="items-per-page__btns">
+      <app-btn-accent (click)="onItemsPerPageChange(5)" [isDisabled]="itemsPerPage === 5">
+        5
+      </app-btn-accent>
+
+      <app-btn-accent (click)="onItemsPerPageChange(10)" [isDisabled]="itemsPerPage === 10">
+        10
+      </app-btn-accent>
+
+      <app-btn-accent (click)="onItemsPerPageChange(20)" [isDisabled]="itemsPerPage === 20">
+        20
+      </app-btn-accent>
+    </div>
+  </div>
+</div>

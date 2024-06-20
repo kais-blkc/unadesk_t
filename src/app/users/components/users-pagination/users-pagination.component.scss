@@ -1,0 +1,26 @@
+.users-pagination {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__per-page {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .items-per-page {
+    &__btns {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
