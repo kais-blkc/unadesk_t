@@ -5,10 +5,10 @@ import {
   OnDestroy,
   OnInit,
 } from '@angular/core';
+import { BtnAccentComponent } from '../../../share/btn-accent/btn-accent.component';
 import { UsersService } from '../../services/users.service';
-import { Observable, Subscription } from 'rxjs';
 import { TItemsPerPage } from '../../types/users.interface';
-import { BtnAccentComponent } from '../../../btn-accent/btn-accent.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-users-pagination',
