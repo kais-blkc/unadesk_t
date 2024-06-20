@@ -8,7 +8,7 @@ import {
 import { UsersService } from '../../services/users.service';
 import { Observable, Subscription } from 'rxjs';
 import { TItemsPerPage } from '../../types/users.interface';
-import { BtnAccentComponent } from '../../../share/btn-accent/btn-accent.component';
+import { BtnAccentComponent } from '../../../btn-accent/btn-accent.component';
 
 @Component({
   selector: 'app-users-pagination',
